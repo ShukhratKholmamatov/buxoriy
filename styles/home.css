@@ -1,0 +1,401 @@
+*{
+    font-family: "Outfit", sans-serif;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  * body .navbar {
+    width: 100%;
+    background-color: #F6F6F6;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.034); 
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    backdrop-filter: blur(14px); 
+    height: 78px;
+    display: flex;
+    padding: 22px 95px;
+    align-items: center; }
+    * body .navbar img {
+      width: 90px;
+      height: 90px; }
+    * body .navbar ul {
+      margin-left: 300px; }
+      * body .navbar ul li {
+        display: inline;
+        margin-right: 10px; }
+        * body .navbar ul li a {
+          text-decoration: none;
+          color: #7b92b5;
+          font-size: 14px; }
+    * body .navbar .btns {
+      margin-left: 260px; }
+      * body .navbar .btns button {
+        border: 1px solid #002F75;
+        border-radius: 10px;
+        color: #002F75;
+        padding: 8px 16px; }
+      * body .navbar .btns .register {
+        background-color: #002F75;
+        color: #fff;
+        margin-left: 20px; }
+  
+  #backtop {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: #fff;
+    box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+    color: #444;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: 24px;
+    bottom: -55px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+    transition: 0.5s;
+  }
+  #backtop:hover {
+    background: rgb(241, 242, 236);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #light-dark {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  
+  .dark #light-dark:hover {
+    background: rgb(52, 51, 51);
+  }
+  
+  .dark #light-dark {
+    fill: #fff;
+  }
+  
+  .dark {
+    background: rgb(31, 30, 30);
+  }
+  
+  .dark * {
+    color: #fff !important;
+  }
+  
+  .dark #home {
+    background: rgb(52, 51, 51);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .dark #home .top {
+    display: none;
+  }
+  
+  .dark #home .bottom {
+    display: none;
+  }
+  
+  .dark .fixed {
+    background: rgb(72, 70, 70);
+  }
+  
+  .dark h5 {
+    background: rgb(52, 51, 51) !important;
+  }
+  
+  .dark .card:hover {
+    background: rgb(82, 77, 77) !important;
+  }
+  
+  .dark button {
+    background: transparent !important;
+  }
+  
+  .dark button:hover {
+    background: rgb(82, 78, 78) !important;
+  }
+  
+  .dark #property {
+    background: rgb(52, 51, 51);
+  }
+  
+  .dark #nav-responsive {
+    background: rgb(71, 70, 70);
+  }
+  
+  .dark input {
+    background: rgb(87, 86, 86);
+  }
+  
+  .dark ::-moz-placeholder {
+    color: #fff !important;
+  }
+  
+  .dark ::placeholder {
+    color: #fff !important;
+  }
+  
+  .dark .menu-button span {
+    background: #fff;
+  }
+  
+  .dark #fixed .nav ul li a img {
+    fill: #fff !important;
+  }
+  
+  .dark h5 {
+    background: transparent !important;
+  }
+  
+  .dark #family .family .text .cards .card:hover {
+    background: transparent !important;
+  }
+  
+  .dark #property .property .cards .card {
+    background: rgb(27, 25, 25);
+  }
+  
+  .dark #property .property-top {
+    display: none;
+  }
+  
+  .dark #property .property-bottom {
+    display: none;
+  }
+  
+  .dark #locations {
+    background: rgb(31, 30, 30);
+  }
+  
+  .dark #locations .mark .cards .card {
+    background: rgb(26, 25, 25);
+  }
+  
+  .dark #blog {
+    background: rgb(52, 51, 51);
+  }
+  
+  .dark #blog .blog .cards .card {
+    background: rgb(26, 25, 25);
+  }
+  
+  .dark #blog .blog .cards .card .text .row-1 .trends {
+    background: rgb(86, 83, 83);
+  }
+  
+  .dark #footer_2 {
+    background: rgb(52, 51, 51);
+  }
+  
+  .dark #footer_2 .bottom .social_medias svg {
+    display: block;
+  }
+  
+  .dark #footer_2 .bottom .social_medias img {
+    display: none;
+  }
+  
+  #footer_2 .bottom .social_medias svg {
+    display: none;
+  }
+  
+  .dark header #header-1 {
+    background: rgb(65, 63, 63);
+  }
+  
+  .dark #fixed .menu-button span {
+    background: #fff;
+  }
+  
+  .dark #nav-responsive {
+    background: #474646 !important;
+  }
+
+    .fixed #nav-responsive {
+      position: fixed;
+      top: 104px;
+      bottom: 0;
+      left: 100%;
+      height: 560px;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      transition: 0.5s;
+      z-index: 100;
+    }
+    .fixed .button_2 {
+      margin: 0px !important;
+    }
+    .fixed .menu-button {
+      display: flex;
+    }
+  
+  
+  
+  
+  main section {
+    background-image: linear-gradient(to right, #002f75, #fff);
+  }
+  main section .hero {
+    background-image: url(../../images/hero-bg.png) !important;
+    position: relative;
+  }
+  main section .hero .hero-contents .links {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 10px;
+  }
+  main section .hero .hero-contents .hero-texts {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    padding: 200px 0 220px 0;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+  main section .hero .hero-contents .hero-texts h1 {
+    font-weight: 700;
+    font-size: 56px;
+    color: #fff;
+  }
+  main section .hero .hero-contents .hero-texts h3 {
+    font-size: 28px;
+    font-weight: 500px;
+    opacity: 0.8;
+    color: #fff;
+  }
+  main section .hero .hero-contents .hero-texts p {
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 24px;
+    opacity: 0.8;
+    width: 548px;
+    color: #fff;
+  }
+  main section .hero .hero-contents .hero-texts button {
+    padding: 8px 16px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease;
+  }
+  main section .hero .hero-contents .hero-texts button:hover {
+    background: inherit;
+    color: #fff;
+  }
+
+
+  main .last .last-contents {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 31px;
+  }
+   .last-card {
+    position: absolute;
+    left: 250px;
+    top: 190%;
+    border-radius: 20px;
+    padding: 42px 37px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 280px !important;
+    height: 255px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 20;
+  }
+
+  .last-card h4{
+    font-size: 24px;
+    color: #002F75;
+  }
+
+  .last-card p{
+    font-size: 18px;
+  }
+  
+  main .last .last-contents .last-texts p {
+    width: 650px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }/*# sourceMappingURL=style.css.map */
+  * body .footer {
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    * body .footer .logo1 {
+      width: 200;
+      height: 120; }
+      * body .footer .logo1 img {
+        width: 200;
+        height: 120px; }
+    * body .footer ul li {
+      display: inline; }
+      * body .footer ul li a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 20px;
+        font-size: 14px; }
+    * body .footer .social_links {
+      display: flex;
+      width: 128px;
+      height: 20px; }
+      * body .footer .social_links img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px; }
+      * body .footer .social_links img.telegram {
+        width: 16px;
+        height: 16px; }
+      * body .footer .social_links img.youtube {
+        width: 16px;
+        height: 16px; }
+    * body .footer .line {
+      width: 1272px;
+      height: 1px;
+      background-color: #fff; }
+    * body .footer p {
+      color: #fff; }

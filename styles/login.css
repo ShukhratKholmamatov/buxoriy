@@ -235,6 +235,28 @@
  .is-gx {
 	 animation: is-gx 1.25s;
 }
+
+  /* width */
+  ::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+  }
+
  @keyframes is-gx {
 	 0%, 10%, 100% {
 		 width: 400px;

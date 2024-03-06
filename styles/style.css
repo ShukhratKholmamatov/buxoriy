@@ -41,13 +41,16 @@
   display: flex;
   padding: 22px 95px;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   z-index: 2;
 }
+
 * body .navbar img {
   width: 86px;
   height: 50px;
 }
+
 * body .navbar ul {
   margin-left: 300px;
 }
@@ -80,6 +83,108 @@
 * body .navbar .btns .register .register:hover {
   cursor: pointer;
 }
+
+* body .navbar .hello{
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+* body  .hiding_bar{
+  width: 300px;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 30;
+}
+
+.hiding_bar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  
+}
+
+.hiding_bar ul li{
+  color: #002F75;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+
+  border: 1px solid #002F75;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #002F75;
+  padding: 8px 16px;
+  cursor: pointer; 
+  transition: .3s;
+}
+
+.hiding_bar ul a{
+  color: #000;
+  text-decoration: none;
+}
+
+.hiding_bar .btns{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+}
+
+.hiding_bar .btns button{
+  border: 1px solid #002F75;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #002F75;
+  padding: 8px 16px;
+  cursor: pointer; 
+  transition: .3s;
+}
+
+.hiding_bar .btns button:hover{
+  background-color: #003E9A;
+  color: #fff;
+}
+
+.hiding_bar .cancel{
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3%;
+  right: 3%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: .3s;
+}
+
+.hiding_bar .cancel img{
+  width: 20px;
+  height: 20px;
+}
+
+.hiding_bar .cancel:hover{
+  background-color: #7b92b5;
+}
+
 * body .container {
   width: 100%;
   height: auto;
@@ -346,6 +451,12 @@
     height: 234px;
     display: flex;
     align-items: center;
+  }
+
+  * body .navbar .hello{
+    width: 20px;
+    height: 20px;
+    display: block;
   }
 /*# sourceMappingURL=style.css.map */
   }

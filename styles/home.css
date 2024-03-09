@@ -5,6 +5,15 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+.main{
+  width: 100%;
+  height: auto;
+}
+
+body{
+  width: 100%;
+}
 .container {
     width: 90%;
     margin: 0 auto;
@@ -244,7 +253,7 @@
     width: 100%;
     height: auto;
     background: linear-gradient(0deg, #F6F6F6, #F6F6F6),
-linear-gradient(318.11deg, #D9DEE3 -3.96%, #FFFFFF 94.29%);
+    linear-gradient(318.11deg, #D9DEE3 -3.96%, #FFFFFF 94.29%);
     padding: 100px 120px;
     display: flex;
   }
@@ -345,9 +354,38 @@ linear-gradient(318.11deg, #D9DEE3 -3.96%, #FFFFFF 94.29%);
     * body .footer p {
       color: #fff; }
 
-      @media only screen and (max-width:1300px){
+      @media only screen and (max-width:1356px){
+        body{
+          width: 100%;
+        }
+
+        .container{
+          height: 100vh;
+        }
+
+        .container .gradient{
+          height: 100vh;
+        }
+
+
+        .haqida{
+          justify-content: space-around;
+        }
         body{
           overflow-x: hidden;
+        }
+
+        .navbar{
+          width: 100%;
+          height: auto;
+        }
+
+        .container{
+          width: 100%;
+        }
+
+        .haqida{
+          width: 100%;
         }
 
         .navbar img.hello{
@@ -381,10 +419,6 @@ linear-gradient(318.11deg, #D9DEE3 -3.96%, #FFFFFF 94.29%);
 
       @media only screen and (max-width: 1000px){
 
-        .haqida{
-          justify-content: space-around;
-        }
-
         .haqida .paragraph p{
           font-size: 18px;
           margin-bottom: 10px;
@@ -404,7 +438,12 @@ linear-gradient(318.11deg, #D9DEE3 -3.96%, #FFFFFF 94.29%);
 
       @media only screen and (max-width: 880px){
           body .navbar{
-            padding: 22px 50px;
+            padding: 0px 20px;
+            height: auto;
+          }
+
+          *{
+            overflow-x: hidden;
           }
 
           .container{

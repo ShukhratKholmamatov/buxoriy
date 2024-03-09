@@ -145,16 +145,16 @@
 
     * body .container {
       width: 100%;
-      height: 806px;  
+      height: auto; 
       display: flex;
       flex-direction: column;
-      padding: 0 120px;
+      padding: 0px;
       align-items: center;
       justify-content: space-around; }
       * body .container .suhbat {
-        margin-top: 80px;
+        margin-top: 110px;
         margin-left: 30px;
-        width: 1180px;
+        width: 90%;
         height: 72px;
         background-color: #fff;
         border-radius: 16px;
@@ -190,9 +190,10 @@
 
 
       * body .container .preview{
-        width: 100%;
+        width: 90%;
         height: auto;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
         align-items: center;
         justify-content: space-around;
       }
@@ -207,6 +208,7 @@
             background-color: #fff;
             padding: 35px;
             margin-left: 30px;
+            margin-top: 30px;
         }
         * body .container .preview .dars img{
             width: 508px;
@@ -235,7 +237,7 @@
 
      
 * body .container .route {
-  width: 100%;
+  width: 90%;
   height: 52px;
   display: flex;
   align-items: center;
@@ -310,6 +312,51 @@
   color: #fff;
 }
 
+@media only screen and (max-width:1360px) {
+  * body .navbar {
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  * body .navbar ul {
+    display: none;
+  }
+
+  * body .navbar ul li {
+    display: none;
+    margin-right: 10px;
+  }
+
+  * body .navbar ul li a {
+    display: none;
+    text-decoration: none;
+    color: #7b92b5;
+    font-size: 14px;
+  }
+
+  * body .navbar .btns {
+    display: none;
+  }
+
+  * body .navbar .btns .register {
+    background-color: #002F75;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  * body .navbar .btns .register .register:hover {
+    cursor: pointer;
+  }
+
+  * body .navbar .hello{
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+}
+
+
 
 @media only screen and (max-width:1260px) {
   *{
@@ -383,27 +430,26 @@
 
 
   * body .container .preview{
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    width: 90%;
+    height: auto;
+    display: grid;
     align-items: center;
     justify-content: space-around;
   }
 
     * body .container .preview .dars{
-        width: 50%;
-        height: 80vh;
+        width: 90%;
+        height: 349px;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
         background-color: #fff;
         padding: 35px;
-        margin-left: 30px;
     }
     * body .container .preview .dars img{
         width: 100%;
-        height: 50vh;
+        height: 220px;
         border-radius: 10px;
     }
     * body .container .preview .dars .content{
@@ -458,6 +504,10 @@
     *{
       box-sizing: border-box;
       overflow-x: hidden;
+    }
+
+    body{
+      padding: 0;
     }
   
     * body .navbar {
@@ -514,22 +564,31 @@
           width: 70px; }
   
     /* Suhbat end */
+
+    * body .container .preview{
+      flex-direction: column;
+      height: auto;
+      padding: 0;
+    }
   
   
     * body .container .preview .dars{
-      width: 47%;
-      height: 65vh;
+      width: 98%;
+      height: 300px;
       display: flex;
       flex-direction: column;
       align-items: center;
       border-radius: 20px;
       background-color: #fff;
       padding: 35px;
+      margin-top: 20px;
       margin-left: 0px;
+      margin-right: 0px;
+      padding: 20px;
   }
   * body .container .preview .dars img{
-      width: 110%;
-      height: 50vh;
+      width: 100%;
+      height: 260px;
       border-radius: 10px;
   }
   * body .container .preview .dars .content{
@@ -538,6 +597,10 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+  }
+
+  * body .container .preview .dars .content h3{
+    font-size: 20px;
   }
   
     /* DARS ENDS */
@@ -636,8 +699,8 @@
       }
     
       * body .container .preview .dars{
-        width: 80%;
-        height: 95vh;
+        width: 90%;
+        height: 420px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -649,7 +712,7 @@
     }
     * body .container .preview .dars img{
         width: 110%;
-        height: 60vh;
+        height: 350px;
         border-radius: 10px;
     }
     * body .container .preview .dars .content{
@@ -734,7 +797,7 @@
       
         * body .container .preview .dars{
           width: 80%;
-          height: 75vh;
+          height: 340px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -746,7 +809,7 @@
       }
       * body .container .preview .dars img{
           width: 110%;
-          height: 60vh;
+          height: 300px;
           border-radius: 10px;
       }
       * body .container .preview .dars .content{
@@ -833,8 +896,8 @@
         
           * body .container .preview .dars{
             margin-top: 30px;
-            width: 80%;
-            height: 65vh;
+            width: 90%;
+            height: 320px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -845,7 +908,7 @@
         }
         * body .container .preview .dars img{
             width: 110%;
-            height: 35vh;
+            height: 280px;
             border-radius: 10px;
         }
         * body .container .preview .dars .content{
@@ -870,6 +933,7 @@
 
   * body .navbar {
     padding: 10px;
+    z-index: 2;
   }
 
   * body .navbar ul {
@@ -924,22 +988,25 @@
   /* Suhbat end */
 
 
-  * body .container .darslar {
+  * body .container .preview {
     display: flex;
     width: 100%;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     z-index: 1;
-    height: 221;
-    margin-left: 40px;
+    height: auto;
+    margin-left: 0px;
     margin-bottom: 0;
+    padding: 0;
   }
-  * body .container .darslar .dars {
+  * body .container .preview .dars {
     margin-top: 20px;
+    height: 320px;
   }
 
   * body .container .preview .dars img{
-    height: 140px;
+    height: 280px;
   }
 
   /* DARS ENDS */

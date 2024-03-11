@@ -75,9 +75,11 @@ body{
         border: 1px solid #002F75;
         border-radius: 10px;
         color: #002F75;
+        cursor: pointer;
         padding: 8px 16px; }
       * body .navbar .btns .register {
         background-color: #002F75;
+        cursor: pointer;
         color: #fff;
         margin-left: 20px; }
 
@@ -87,6 +89,7 @@ body{
           width: 30px;
           height: 20px;
           display: none;
+          cursor: pointer;
         }
 
         /* MENU_BAR */
@@ -174,6 +177,7 @@ body{
           border-radius: 50%;
           padding: 10px;
           transition: .3s;
+          cursor: pointer;
         }
 
         .hiding_bar .cancel img{
@@ -192,7 +196,7 @@ body{
   }
 
   .container{
-    width: 100%;
+    width: 100%;  
     height: 100vh;
     display: flex;
     align-items: center;
@@ -259,21 +263,26 @@ body{
   }
 
   .haqida img{
-    width: 40%;
-    height: 544px;
-    margin-right: 120px;
-    filter: grayscale(.2);
+    width: 50%;
+    height: 304px;
+    filter: brightness(.6);
     border-radius: 20px;
+    transition: .3s;
   }
 
-  .haqida .parapgraph{
+  .haqida img:hover{
+    filter: brightness(1);
+  }
+
+  .haqida .paragraph{
     width: 60%;
     height: auto;
+    margin-left: 30px;
   }
 
   .haqida .paragraph p{
-    font-size: 20px;
-    margin-bottom: 22px;
+    font-size: 18px;
+    margin-bottom: 18px;
   }
 
   .drop_text{
@@ -359,11 +368,15 @@ body{
         font-size: 14px; }
     * body .footer .social_links {
       display: flex;
-      width: 128px;
+      width: 38%;
+      align-items: center;
+      justify-content: center;
+      overflow-y: hidden;
+      height: 100px;
       height: 20px; }
       * body .footer .social_links img {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
         margin-right: 10px; }
     * body .footer .line {
       width: 1272px;
@@ -372,7 +385,7 @@ body{
     * body .footer p {
       color: #fff; }
 
-      @media only screen and (max-width:1356px){
+      @media only screen and (max-width:1355px){
         body{
           width: 100%;
         }
@@ -445,12 +458,12 @@ body{
         .haqida .paragraph{
           width: 100%;
           padding: 0;
-          margin-left: 0;
+          margin-left: 10px;
           justify-content: center;
         }
 
         .haqida img{
-          margin-right: 30px;
+          height: 258px;
         }
       } 
 
@@ -503,6 +516,7 @@ body{
 
           .haqida{
             flex-direction: column;
+            align-items: center;
           }
 
           .haqida .paragraph{
@@ -510,11 +524,25 @@ body{
           }
 
           .haqida img{
-            width: 400px;
+            width: 90%;
+            height: 400px;
           }
       } 
 
-      @media only screen and (max-width: 375px){
+      @media only screen and (max-width:760px){
+        .haqida img{
+          height: 360px;
+        }
+      }
+
+      @media only screen and (max-width:670px){
+        .haqida img{
+          width: 95%;
+          height: 280px;
+        }
+      }
+
+      @media only screen and (max-width: 505px){
         .container .text {
           margin-left: 10px;
           width: 100%;
@@ -526,7 +554,7 @@ body{
 
         .haqida img{
           width: 100%;
-          height: 228px;
+          height: 258px;
           filter: brightness(.8);
         }
 
@@ -539,5 +567,11 @@ body{
         .drop_text .why h3{
           font-size: 16px;
           margin-top: 0;
+        }
+      }
+
+      @media only screen and (max-width: 435px){
+        .haqida img{
+          height: 208px;
         }
       }

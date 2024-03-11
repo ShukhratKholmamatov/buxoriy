@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 * {
-  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -53,10 +53,14 @@
 
 * body .navbar ul {
   margin-left: 300px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 * body .navbar ul li {
-  display: inline;
-  margin-right: 10px;
+  text-decoration: none;
+  list-style: none;
 }
 * body .navbar ul li a {
   text-decoration: none;
@@ -197,7 +201,7 @@
 * body .container .suhbat {
   margin-top: 110px;
   margin-bottom: 30px;
-  width: 100%;
+  width: 1200px;
   height: 72px;
   background-color: #fff;
   border-radius: 16px;
@@ -232,7 +236,7 @@
 
 
 * body .container .darslar {
-  width: 100%;
+  width: 1200px;
   height: auto;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -240,7 +244,7 @@
 * body .container .darslar .dars {
   width: 272px;
   height: 221;
-  margin-right: 36px;
+  margin-left: 18px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -331,9 +335,18 @@
 }
 * body .footer .social_links {
   display: flex;
-  width: 128px;
+  width: 38%;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
   height: 20px;
 }
+
+* body .footer .social_links a{
+  height: 20px;
+  overflow-y: hidden;
+}
+
 * body .footer .social_links img {
   width: 20px;
   height: 20px;
@@ -399,7 +412,7 @@
 
   /* Suhbat starts */
   * body .container .suhbat {
-    margin-top: 90px;
+    margin-top: 120px;
     width: 90%;
     height: 45px;
     margin-left: 0; }
@@ -424,7 +437,8 @@
   }
   * body .container .darslar .dars {
     margin-top: 20px;
-    margin-left: 27px;
+    margin-left: 37px;
+    width: 10 0%;
   }
 
   /* DARS ENDS */

@@ -1,5 +1,5 @@
 *{
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,11 +60,17 @@ body{
     * body .navbar img {
       width: 100px;
       height: 100px; }
-    * body .navbar ul {
-      margin-left: 300px; }
+      * body .navbar ul {
+        margin-left: 300px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
       * body .navbar ul li {
-        display: inline;
-        margin-right: 10px; }
+        text-decoration: none;
+        list-style: none;
+      }
         * body .navbar ul li a {
           text-decoration: none;
           color: #7b92b5;
@@ -232,21 +238,26 @@ body{
     color: #fff;
     font-weight: 700;
     line-height: 78.4px;
-    font-size: 56px;
+    font-size: 46px;
+    overflow-y: hidden;
   }
 
   .container .text h3{
     color: #fff;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 39.2px;
+  }
+
+  .keyin{
+    display: none;
   }
 
   .container .text p{
     margin-top: 10px;
     color: #FFFFFF;
     text-align: left;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     font-weight: 100;
   }
@@ -281,7 +292,7 @@ body{
   }
 
   .haqida .paragraph p{
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 18px;
   }
 
@@ -368,12 +379,16 @@ body{
         font-size: 14px; }
     * body .footer .social_links {
       display: flex;
+      padding: 5px;
       width: 38%;
       align-items: center;
       justify-content: center;
       overflow-y: hidden;
-      height: 100px;
       height: 20px; }
+
+      * body .footer .social_links a{
+        height: 20px;
+      }
       * body .footer .social_links img {
         width: 22px;
         height: 22px;
@@ -398,6 +413,14 @@ body{
           height: 100vh;
         }
 
+        .navbar ul{
+          display: none;
+        }
+
+        .navbar ul li{
+          display: none;
+        }
+
 
         .haqida{
           justify-content: space-around;
@@ -415,9 +438,17 @@ body{
           width: 100%;
         }
 
+        .container .text {
+          height: 259px;
+        }
+        .container .text h1{
+           line-height: 50px;
+        }
+
         .haqida{
           width: 100%;
         }
+
 
         .navbar img.hello{
           display: block;
@@ -441,11 +472,17 @@ body{
           padding: 30px;
         }
 
+        .container .text{
+          height: 280px;
+        }
+
         .haqida .paragraph p{
           margin-bottom: 20px;
           font-size: 18px;
           font-weight: 500;
         }
+
+
       }
 
       @media only screen and (max-width: 1000px){
@@ -453,6 +490,18 @@ body{
         .haqida .paragraph p{
           font-size: 18px;
           margin-bottom: 10px;
+        }
+
+        .container .text{
+          margin-left: 50px;
+        }
+
+        .keyin{
+          display: block;
+        }
+
+        .container .text{
+          height: 320px;
         }
 
         .haqida .paragraph{
@@ -525,13 +574,23 @@ body{
 
           .haqida img{
             width: 90%;
-            height: 400px;
+            height: 380px;
           }
       } 
 
       @media only screen and (max-width:760px){
         .haqida img{
           height: 360px;
+        }
+
+        .container .text{
+          text-align: right;
+          margin-left: 300px;
+        }
+
+        .container .text h1{
+          text-align: right;
+          margin-right: ;
         }
       }
 

@@ -222,6 +222,11 @@
       border-radius: 50%;
       margin: 0 10px;
       cursor: pointer;
+      display: flex;
+      width: auto;
+      height: auto;
+      justify-content: center;
+      align-items: center;
     }
     * body .container .suhbat .search button.search_btn img {
       width: 18px;

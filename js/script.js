@@ -1,5 +1,7 @@
 let navbar = document.getElementById('bar');
 let more_text = document.getElementById('more_text');
+let kamroq = document.getElementById('kamroq');
+let koproq = document.getElementById('koproq');
 
 function bar(){
     navbar.style.display = "flex";
@@ -9,10 +11,20 @@ function cancel(){
     navbar.style.display = "none";
 }
 
-function more(){
+
+function more(){ 
     more_text.style.height = "auto";
-    more_text.style.webkitTextFillColor = "none";
+    more_text.style.webkitTextFillColor = "#000";
+    koproq.style.display = "none";
+    kamroq.style.display = "flex";
     // -webkit-background-clip: text;
+}
+
+function less(){
+    more_text.style.height = "100px";
+    more_text.style.webkitTextFillColor = "transparent";
+    koproq.style.display = "flex";
+    kamroq.style.display = "none";
 }
 
 let counter = 0;

@@ -223,7 +223,7 @@
   }
 
   .container .video_info .description{
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -242,10 +242,11 @@
 
   .container .video_info .description .info p {
     background: -webkit-linear-gradient(#333, #eee);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 100px;
     overflow-y: hidden;
+    transition: .4s;
   }
 
   .container .video_info .description .info button{
@@ -268,9 +269,13 @@
   
 
   .container .video_info .description .btns{
-    width: 30%;
+    width: 40%;
     display: flex;
     margin-left: 190px;
+  }
+
+  #kamroq{
+    display: none;
   }
 
   .container .video_info .description .btns button:nth-child(1){
@@ -308,6 +313,7 @@
   .container .banch_videos{
     width: 27%;
     height: 480px;
+    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,12 +340,12 @@
     margin-left: 10px;
   }
 
-  .container .banch_videos .videos .video_card .about h4, p{
-    font-size: 16px;
+  .container .banch_videos .videos .video_card .about h4{
+    font-size: 13px;
   }
 
   .container .banch_videos .videos .video_card .about p{
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .container .banch_videos .videos .video_card img{
@@ -490,7 +496,7 @@
     .container .banch_videos .videos .video_card .about{
         width: 50%;
         height: 240px;
-        padding: 30px;
+        padding: 10px;
     }
 
     .container .banch_videos .videos .video_card .about h4{
@@ -502,7 +508,7 @@
     }
 
     .container .banch_videos .videos .video_card img{
-        width: 50%;
+        width: 46%;
         height: 240px;
     }
   
@@ -539,7 +545,7 @@
     .container .banch_videos .videos .video_card .about{
         width: 50%;
         height: 200px;
-        padding: 30px;
+        padding: 10px;
     }
     }
   
@@ -554,6 +560,12 @@
         .container .video_info .description .info{
             width: 80%;
         }
+
+        .container .video_info .description .btns{
+          width: 80%;
+          margin-left: 0;
+          margin-top: 20px;
+      }
 
         .container .banch_videos{
             width: 80%;
@@ -624,7 +636,7 @@
 
     }
 
-    @media only screen and (max-width:530px){
+    @media only screen and (max-width:580px){
         .container .video_info .video iframe{
             height: 250px;
         }
@@ -641,6 +653,14 @@
         .container .banch_videos .videos .video_card .about{
             width: 50%;
             height: 120px;
+        }
+
+        .container .banch_videos .videos .video_card .about h4{
+          font-size: 15px;
+        }
+
+        .container .banch_videos .videos .video_card .about p{
+          font-size: 12px;
         }
     
         .container .banch_videos .videos .video_card img{
@@ -664,9 +684,6 @@
         height: 100px;
     }
 
-    .container .banch_videos .videos .video_card .about h4{
-      font-size: 16px;
-    }
 
 
     .container .video_info .video iframe {
@@ -692,12 +709,16 @@
 
       .container .banch_videos .videos .video_card .about{
           width: 50%;
-          height: 120px;
+          height: 100px;
       }
   
       .container .banch_videos .videos .video_card img{
           width: 50%;
-          height: 100px;
+          height: 90px;
+      }
+
+      .container .banch_videos .videos .video_card .about h4{
+        font-size: 13px;
       }
   }
   

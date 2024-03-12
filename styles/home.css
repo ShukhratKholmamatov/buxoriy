@@ -395,6 +395,7 @@ body{
 
       * body .footer .social_links a{
         height: 20px;
+        overflow-y: hidden;
       }
       * body .footer .social_links img {
         width: 22px;

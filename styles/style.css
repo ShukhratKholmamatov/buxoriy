@@ -223,8 +223,8 @@
       margin: 0 10px;
       cursor: pointer;
       display: flex;
-      width: auto;
-      height: auto;
+      width: 40px;
+      height: 40px;
       justify-content: center;
       align-items: center;
     }
@@ -254,7 +254,6 @@
   border-radius: 20px;
 }
 * body .container .darslar .dars img {
-  filter: brightness(0.7);
   width: 265px;
   height: 158px;
   border-radius: 16px 16px 0 0;
@@ -446,6 +445,8 @@
     width: 10 0%;
   }
 
+
+
   /* DARS ENDS */
   
   * body .container .route {
@@ -476,6 +477,11 @@
     width: 20px;
     height: 20px;
     display: block;
+  }
+
+  * body .container .suhbat .search button.search_btn{
+    width: 30px;
+    height: 30px;
   }
 /*# sourceMappingURL=style.css.map */
   }

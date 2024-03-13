@@ -276,14 +276,12 @@ body{
     display: none;
     width: 50%;
     height: 304px;
-    filter: brightness(.6);
     border-radius: 20px;
     transition: .3s;
   }
 
   .haqida img:nth-child(2){
     width: 40%;
-    filter: brightness(.7);
     transition: .4s;
     border-radius: 16px;
   }

@@ -5,6 +5,7 @@ let koproq = document.getElementById('koproq');
 
 function bar(){
     navbar.style.display = "flex";
+    navbar.style.transition = "all 2s";
 }
 
 function cancel(){
@@ -33,7 +34,7 @@ function popOut() {
     let text = document.getElementById('tex');
     let down = document.getElementById('down');
     let up = document.getElementById('up');
-    text.style.transition = ".3s";
+    text.style.transition = "all 3s";
     text.style.display = "block";
     down.style.display = "none";
     up.style.display = "block";

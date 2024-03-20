@@ -206,11 +206,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #ebebeb;
           }
           * body .container .suhbat .search button.search_btn img {
             width: 18px;
             height: 18px;
             border-radius: 100%;
+            border-color: #ebebeb;
             border: none; }
           * body .container .suhbat .search input {
             width: 200px;
@@ -221,7 +223,7 @@
 
 
       * body .container .preview{
-        width: 90%;
+        width: 1260px;
         height: auto;
         display: grid;
         grid-template-columns: auto auto;
